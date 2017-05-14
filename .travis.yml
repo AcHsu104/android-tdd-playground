@@ -2,12 +2,13 @@ language: android
 jdk: oraclejdk8
 env:
   matrix:
-    - ANDROID_TARGET=android-21  ANDROID_ABI=armeabi-v7a
+    - TARGET=android-23 ANDROID_TARGET=android-21  ANDROID_ABI=armeabi-v7a
 
 android:
   components:
     - build-tools-23.0.3
     - $ANDROID_TARGET
+    - $TARGET
 # Specify at least one system image,
     - sys-img-armeabi-v7a-$ANDROID_TARGET
 
